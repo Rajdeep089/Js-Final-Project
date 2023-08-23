@@ -1,0 +1,374 @@
+/* NavBar CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  nav {
+    width: 100%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+  }
+  
+  .social-call{
+      height: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  }
+  .social a{
+      margin: 0 5px;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 0.9rem;
+  
+  }
+  
+  .phone{
+      color: rgba(0, 0, 0, 0.7);
+      margin-left: 30px;
+      font-size: 0.9rem;
+  }
+  
+  .social a:hover{
+      color: #0b9d8a;
+      transition: all ease 0.3s;
+  }
+  
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+  }
+  
+  .logo, logo span{
+    font-size: 30px;
+  }
+  
+  .logo{
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .logo span{
+    color: #0b9d8a;
+  }
+  
+  .menu{
+    display: flex;
+  
+  }
+  
+  .menu li{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .menu li a{
+    color: #555555;
+  }
+  
+  .right-menu a{
+    margin:0 10px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .menu a:hover, .right-menu a:hover{
+    color: #0b9d8a;
+      transition: all ease 0.3s;
+  }
+  
+  .fa-shopping-cart{
+    position: relative;
+  }
+  .num-cart-product{
+  position: absolute;
+  top: -17px;
+  right:-17px;
+  width: 25px;
+  height: 25px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background-color: #0b9d8a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  }
+
+
+  /* Footer CSS */
+
+  footer {
+    background-color: black;
+    height: 180px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer ul li {
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  footer ul li a,
+  footer ul li {
+    text-decoration: none;
+    color: #b8b8b8;
+    font-size: 12px;
+  }
+  footer ul li a:hover,
+  footer ul li:hover {
+    color: #009688;
+  }
+  footer ul li h3 {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto;
+    }
+    footer ul {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    footer ul {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+
+/* main body of Cart Page */
+
+
+.cart-container{
+margin: 4% 6%;
+}
+
+.cart-container h1{
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .cart-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left-box{
+    width: 52%;
+  margin-top: 60px;
+  }
+
+  .right-box{
+    width: 45%;
+  margin-top: 60px;
+  }
+
+  .left-box p{
+    color: rgb(27, 25, 25);
+  letter-spacing: 1px;
+  font-size: 20px;
+  }
+
+  .product-card{
+    display: flex;
+  width: 600px;
+  margin-top: 25px;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .product-card img{
+    width: 80px;
+  height: 100px;
+  border-radius: 4px;
+  }
+
+  .product-card .product-details{
+    padding-left: 15px;
+  }
+
+  .product-card .product-details p{
+    font-size: 16px;
+  margin-top: 8px;
+  }
+
+  .cart-summary{
+    width: 450px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .cart-summary h2{
+    letter-spacing: 2px;
+  font-weight: 200;
+  }
+
+  .cart-summary p{
+    margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  }
+
+  .cart-summary p span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .cart-summary #place-order-btn{
+    font-size: 16px;
+  margin-top: 50px;
+  font-weight: 300;
+  color: #fff;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #009688;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #place-order-btn:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  #edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  /* Existing styles */
+
+/* Add a responsive breakpoint for screens up to 480px */
+@media screen and (max-width: 480px) {
+  /* Adjust navigation */
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo, .logo span {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .right-menu {
+    margin-top: 10px;
+  }
+
+  /* Adjust footer */
+  footer {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer ul {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Adjust main content */
+  .cart-container {
+    margin: 4% 2%;
+  }
+
+  .left-box,
+  .right-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .left-box p {
+    font-size: 18px;
+  }
+
+  .product-card img {
+    width: 60px;
+    height: 80px;
+  }
+
+  .product-card .product-details p {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .cart-summary {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .cart-summary h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .cart-summary p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .cart-summary p span {
+    font-size: 16px;
+  }
+
+  .cart-summary #place-order-btn {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 8px 15px;
+  }
+}
